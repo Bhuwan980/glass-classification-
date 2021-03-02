@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>this is home page.</title>
+</head>
+<body>
+<center>
+	<h1>One Step Closer.</h1>
+	<hr>
+
+	<h1>Input the input characterstics of glass.</h1>
+
+    <form action="{% url 'result' %}">
+	 {% csrf_token %}
+    Ri: <input type='text' required name ='Ri'> <br> <br>
+    Na: <input type='text' required name ='Na'> <br> <br>
+    Mg: <input type='text' required name ='Mg'> <br> <br>
+    Al: <input type='text' required name ='Al'> <br> <br>
+    Si: <input type='text' required name ='Si'> <br> <br>
+    K: <input type='text' required name ='K'> <br> <br>
+    Ca: <input type='text' required name ='Ca'> <br> <br>
+    Ba: <input type='text' required name ='Ba'> <br> <br>
+    Fa: <input type='text' required name ='Fa'> <br> <br>
+    <input type='submit' value='submit'> <br> <br>
+
+    
+    </form>
+</center>
+</body>
+</html>
